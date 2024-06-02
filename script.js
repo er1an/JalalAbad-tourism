@@ -1,14 +1,10 @@
-const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId);
 
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-menu");
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show-menu");
+    toggle.classList.toggle("show-icon");
   });
-}
-if (navClose) {
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
-  });
-}
+};
+showMenu("nav-toggle", "nav-menu");
