@@ -1,22 +1,194 @@
 main {
-  background-image: url("../img/sari-chelek-mice-708.jpg");
+  background-image: url("../img/XL.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.221);
 }
 .hero {
-  padding: 200px 0;
+  padding: 260px 0;
 }
-.hero h1 {
-  text-align: center;
-}
+// .hero h1 {
+//   text-align: center;
+// }
 .section__1 {
   margin-top: 35px;
   padding: 15px 40px;
 }
-.section__1 h1,
-p {
-  text-align: center;
-}
+
 .section__1 p {
   font-size: 22px;
 }
+.column {
+  margin-top: 22px;
+  display: grid;
+
+  grid-gap: 0.5em;
+  grid-template-areas:
+    "photoOne phoroTwo photoThree"
+    "photoOne photoFour photoFive";
+  grid-template-columns: 1fr 25% 25%;
+  margin-bottom: 20px;
+}
+
+.column a {
+  border-radius: 6px;
+  color: white;
+}
+.column a h3 {
+  margin-left: 8px;
+}
+.column a:first-child {
+  grid-area: photoOne;
+  height: 350px;
+}
+.trekking {
+  background-image: url("../img/треккинг.jpg");
+  background-size: cover;
+}
+.horse {
+  background-image: url("../img/конные_туры.jpg");
+  background-size: cover;
+}
+.culture {
+  background-image: url("../img/культура.jpg");
+  background-size: cover;
+}
+.sunshine {
+  background-image: url("../img/природные.webp");
+  background-size: cover;
+}
+.eda {
+  background-image: url("../img/культура_еда.jpg");
+  background-size: cover;
+}
+.photo {
+  // object-fit: cover;
+  border-radius: 18px;
+  transition: all 0.3s;
+}
+.photo:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+.slider,
+.slide {
+  width: 100%;
+}
+.slide img {
+  width: 100%;
+  object-fit: cover;
+}
+.image-date {
+  width: 50%;
+  border-radius: 8px;
+  padding: 60px;
+  text-align: left;
+
+  margin-left: 70px;
+  margin-top: -50%;
+  background-color: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(4px);
+  p {
+    color: white;
+  }
+}
+.image-date h2 {
+  color: white;
+}
+.image-date button {
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 6px;
+  background-color: #a92b2a;
+  cursor: pointer;
+}
+.swiper {
+  margin-bottom: 16px;
+}
+.content_img {
+  width: 30%;
+  border: 1px solid black;
+  box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3%);
+  border-radius: 8px;
+}
+.content_img img {
+  width: 100%;
+}
+.content_img h3,
+p {
+  text-align: center;
+}
+.content_img h3 {
+  margin-top: -56px;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(4px);
+  color: white;
+}
+.content_img a button {
+  margin: 0;
+  padding: 0;
+  margin-left: 40%;
+  padding: 6px;
+  background-color: #a92b2a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+.content__blocks1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.content_img {
+  transition: all 0.3s;
+}
+.content_img:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+.contact {
+  margin-top: 32px;
+}
+.social_media {
+  padding-top: 18px;
+  display: flex;
+  gap: 14px;
+  margin: 0 auto;
+  margin-left: 37%;
+}
+.social_media img {
+  width: 60px;
+}
+.logo_jagu img {
+  margin-left: 45%;
+}
+footer {
+  margin-top: 100px;
+  background-color: aquamarine;
+}
+.jagu {
+  // display: flex;
+  // justify-content: space-between;
+}
+.logo_jagu {
+  // display: flex;
+  // flex-direction: column;
+  // text-align: center;
+}
+// .logo_jagu img {
+//   right: 50%;
+// }
+// .logo_jagu h3 {
+//   text-align: center;
+// }

@@ -10,10 +10,13 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <link
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
       rel="stylesheet"
-      href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"
-    /> -->
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -62,15 +65,19 @@
       </nav>
     </header>
     <main class="main">
-      <div class="container">
-        <div class="hero">
-          <h1>Жалал-Абад облусунун туристтик сайты</h1>
+      <div class="overlay">
+        <div class="container">
+          <div class="hero">
+            <h1 class="text_center">Жалал-Абад облусунун туристтик сайты</h1>
+          </div>
         </div>
       </div>
     </main>
     <section class="container section__1">
-      <h1>Укмуштуу окуялар ушул жерден, Жалал-Абад областынан башталат</h1>
-      <p class="justified-text">
+      <h2 class="text_center">
+        Укмуштуу окуялар ушул жерден, Жалал-Абад областынан башталат
+      </h2>
+      <p class="justified-text text_center">
         Кыргызстандын Батыш Тянь-Шань тоолорунда жана Фергана өрөөнүндө
         жайгашкан Жалал-Абад облусу эң бийик жер. дүйнөдөгү эң чоң жапайы жаңгак
         токою Арсланбобдо жайгашкан; Мындан тышкары жапжашыл өрөөндөр жана кооз
@@ -78,12 +85,165 @@
         ЮНЕСКОнун сайттарында корголгон бай биологиялык ар түрдүүлүк жана мунун
         баарын изилдөөгө жардам бере турган көптөгөн жолдор.
       </p>
-      <p>
+      <p class="justified-text text_center">
         Жалал-Абад облусунда жаратылышты сүйүүчү жана саякатчы үчүн керектүү
         нерселердин баары бар. Биз менен байланышыңыз! Биз сизге мунун баарын
         ачып, тажрыйбага ээ болууга жардам беребиз.
       </p>
     </section>
+    <section class="container grid__image">
+      <h2 class="text_center">Жалал-Абад облусуна саякатыңыз үчүн идеялар</h2>
+      <div class="column">
+        <a href="" class="photo trekking">
+          <div class="overlay"><h3>треккинг турлары</h3></div>
+        </a>
+        <a href="" class="photo horse"
+          ><div class="overlay"><h3>Ат минүү турлары</h3></div></a
+        >
+        <a href="" class="photo culture">
+          <div class="overlay"><h3>Маданий жана тарыхый кооз жерлер</h3></div>
+        </a>
+        <a href="" class="photo sunshine"
+          ><div class="overlay"><h3>Жаратылыш кооздуктары</h3></div></a
+        >
+        <a href="" class="photo eda"
+          ><div class="overlay"><h3>тамак-аш, маданият турлары</h3></div></a
+        >
+      </div>
+    </section>
+    <div class="swiper mySwiper">
+      <section class="slider swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="img/город.jpg" alt="" />
+          <div class="image-date">
+            <h2>Жалал-Абад шаары</h2>
+            <p>
+              Жалал-Абад Кыргызстандын үчүнчү чоң шаары, бирок дагы эле өзүнүн
+              жайлуу, бейпил жана меймандос атмосферасын сактап келет.
+              Саякатчылар аймактын башка бөлүктөрүнө барардан мурун шаардын
+              базарларын, парктарын, музейлерин жана аттракциондорун изилдөө
+              үчүн бул жерде бир нече күн өткөрө алышат.
+            </p>
+            <a href=""><button>Кенээнирек...</button></a>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="img/тур.jpg" alt="" />
+          <div class="image-date">
+            <h2>Тур</h2>
+            <p>
+              Жалал-Абад облусунун тоолорун, жолдорун, түрдүү маданиятын жана
+              ашканасын, тарыхый жерлерин көрүүнүн эң жакшы жолдорунун бири
+              биздин турларыбыздын биринде. Жергиликтүү эл тарабынан иштелип
+              чыккан жана жергиликтүү эл тарабынан жасалган жөө басуу, ат минүү,
+              маданий жана кулинардык турларыбыз сизге жергиликтүү эл менен
+              баарлашууга жана укмуштуудай жаратылыш чөйрөбүзгө сүңгүүгө
+              мүмкүндүк берет. Сиз унутпай турган саякат.
+            </p>
+            <a href=""><button>Кенээнирек...</button></a>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img/хистори.webp" alt="" />
+          <div class="image-date">
+            <h2>ТАРЫХЫЙ ЖАНА ДИНИЙ ӨЗГӨЧӨЛҮКТӨР</h2>
+            <p>
+              Жалал-Абад облусунун бул жерлерди кыдырып жүргөн байыркы
+              көчмөндөрдөн тартып, Жибек Жолунун дооруна жана бүгүнкү күнгө
+              чейинки тарыхына терең үңүлүңүз. Байыркы петроглифтер менен
+              таанышып, ыйык күмбөздөрдү зыярат кылып, маданий көп
+              түрдүүлүгүбүздөн ырахат алыңыз.
+            </p>
+            <a href=""><button>Кенээнирек...</button></a>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </div>
+    <section class="container">
+      <div class="content">
+        <h2 class="text_center">
+          Жалал-Абад облусуна саякатыңызды пландап баштаңыз!
+        </h2>
+        <div class="content__blocks1">
+          <div class="content_img">
+            <img src="img/stop.webp" alt="" />
+            <h3>Кайда калуу керек</h3>
+            <p>Жалал-Абад областында кайда калсаңыз болот.</p>
+            <a href=""><button>Кенээнирек</button></a>
+          </div>
+          <div class="content_img">
+            <img src="img/Arslanbob_Transport_JalalAbad-319x223.jpg" alt="" />
+            <h3>Транспорт</h3>
+            <p>
+              Транспорт Кыргызстандын Жалал-Абад облусуна кантип жетүү керек.
+              Кыргызстандын Жалал-Абад облусунун...
+            </p>
+            <a href=""><button>Кенээнирек</button></a>
+          </div>
+          <div class="content_img">
+            <img src="img/chem_zan.webp" alt="" />
+            <h3>Жалал-Абадда эмне кыла алабыз</h3>
+            <p>
+              Жалал-Абад облусунда эмне кылуу керек Бул жерде ар түрдүү
+              пейзаждарды, маданияттарды жана укмуштуу окуяларды табыңыз...
+            </p>
+            <a href=""><button>Кенээнирек</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container contact">
+      <h3 class="text_center">Биз менен байланышыныз</h3>
+      <div class="social_media">
+        <img src="img/email.png" alt="" />
+        <img src="img/facebook-1.png" alt="" />
+        <img src="img/instagram-1.png" alt="" />
+        <img src="img/pngwing.com_.webp" alt="" />
+      </div>
+    </section>
+    <footer>
+      <div class="container jagu">
+        <div class="logo_jagu">
+          <img width="150px" src="img/jagu.png" alt="" />
+          <h3 class="text_center">
+            ЖАЛАЛ-АБАДСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМЕНИ Б.ОСМОНОВА
+          </h3>
+        </div>
+        <div class="logo_jagu">
+          <img width="150px" src="img/84dfedf6019fe703b5f843bf3439695b.jpg" />
+          <h3 class="text_center">
+            Заведующий кафедрой, кандидат педагогических наук <br />
+            Ажыкулов Сапарбек Мажитович
+          </h3>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

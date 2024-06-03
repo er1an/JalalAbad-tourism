@@ -128,6 +128,10 @@ nav {
   max-height: 1000px;
   transition: max-height 0.4s ease-in;
 }
+.dropdown__item:hover::after .dropdown__menu {
+  max-height: 1000px;
+  transition: max-height 0.4s ease-out;
+}
 .dropdown__item:hover .dropdown__arrow {
   transform: rotate(180deg);
 }
@@ -155,6 +159,7 @@ nav {
     height: 100%;
     display: flex;
     column-gap: 5rem;
+    margin-left: 46px;
   }
   .nav__link {
     height: 100%;
@@ -162,4 +167,11 @@ nav {
     justify-content: initial;
     column-gap: 0.25rem;
   }
+}
+h1 {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
 }
