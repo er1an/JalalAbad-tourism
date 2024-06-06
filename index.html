@@ -111,9 +111,19 @@
         >
       </div>
     </section>
-    <div class="swiper mySwiper">
-      <section class="slider swiper-wrapper">
-        <div class="slide swiper-slide">
+
+    <swiper-container
+      class="mySwiper"
+      pagination="true"
+      pagination-clickable="true"
+      navigation="true"
+      space-between="30"
+      centered-slides="true"
+      autoplay-delay="2500"
+      autoplay-disable-on-interaction="false"
+    >
+      <swiper-slide
+        ><div class="slide container">
           <img src="img/город.jpg" alt="" />
           <div class="image-date">
             <h2>Жалал-Абад шаары</h2>
@@ -126,12 +136,10 @@
             </p>
             <a href=""><button>Кенээнирек...</button></a>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="slide swiper-slide">
+        </div></swiper-slide
+      >
+      <swiper-slide>
+        <div class="slide container">
           <img src="img/тур.jpg" alt="" />
           <div class="image-date">
             <h2>Тур</h2>
@@ -146,11 +154,10 @@
             </p>
             <a href=""><button>Кенээнирек...</button></a>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <div class="slide swiper-slide">
+        </div></swiper-slide
+      >
+      <swiper-slide
+        ><div class="slide container">
           <img src="img/хистори.webp" alt="" />
           <div class="image-date">
             <h2>ТАРЫХЫЙ ЖАНА ДИНИЙ ӨЗГӨЧӨЛҮКТӨР</h2>
@@ -163,12 +170,10 @@
             </p>
             <a href=""><button>Кенээнирек...</button></a>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-    </div>
+        </div></swiper-slide
+      >
+    </swiper-container>
+
     <section class="container">
       <div class="content">
         <h2 class="text_center">
@@ -205,10 +210,10 @@
     <section class="container contact">
       <h3 class="text_center">Биз менен байланышыныз</h3>
       <div class="social_media">
-        <img src="img/email.png" alt="" />
-        <img src="img/facebook-1.png" alt="" />
-        <img src="img/instagram-1.png" alt="" />
-        <img src="img/pngwing.com_.webp" alt="" />
+        <a href=""><img src="img/email.png" alt="" /></a>
+        <a href=""> <img src="img/facebook-1.png" alt="" /></a>
+        <a href=""><img src="img/instagram-1.png" alt="" /></a>
+        <a href=""><img src="img/pngwing.com_.webp" alt="" /></a>
       </div>
     </section>
     <footer>
@@ -229,21 +234,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

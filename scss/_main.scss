@@ -88,13 +88,13 @@ main {
   object-fit: cover;
 }
 .image-date {
-  width: 50%;
+  max-width: 50%;
   border-radius: 8px;
   padding: 60px;
   text-align: left;
 
   margin-left: 70px;
-  margin-top: -50%;
+  margin-top: -55%;
   background-color: rgba(0, 0, 0, 0.38);
   backdrop-filter: blur(4px);
   p {
@@ -112,9 +112,7 @@ main {
   background-color: #a92b2a;
   cursor: pointer;
 }
-.swiper {
-  margin-bottom: 16px;
-}
+
 .content_img {
   width: 30%;
   border: 1px solid black;
@@ -192,3 +190,23 @@ footer {
 // .logo_jagu h3 {
 //   text-align: center;
 // }
+.swiper-container {
+  // width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
